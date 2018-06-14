@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import './tachyons.min.css'
 import './index.css'
 
 const Layout = ({ children, data }) => (
