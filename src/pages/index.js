@@ -7,6 +7,11 @@ const IndexPage = ({data}) => (
     <div className="container">
       {data.tuning.edges.map(tune => (
         <div key={tune.node.id}>
+          <select name="" id="">
+          {tune.node.tuning.map(tuneTypes => (
+            <option value={tuneTypes.name}>{tuneTypes.name}</option>
+          ))}
+          </select>
           {tune.node.tuning.map(tuneTypes => (
             <div className="container">
               <p>{tuneTypes.name}</p>
