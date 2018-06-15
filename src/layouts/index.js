@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import './tachyons.min.css'
+import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -11,21 +10,12 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'InTune is the simplest method for finding six-string guitar tunings ranging from standard to drop-c' },
+        { name: 'keywords', content: 'guitar, guitar tuning, tuning, standard tuning, drop-d tuning, drop-c tuning, drop tuning' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
       {children()}
-    </div>
+    < Footer / >
   </div>
 )
 
