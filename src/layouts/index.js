@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Favicon from './favicon.png'
+
 import Footer from '../components/footer'
-import './index.css'
+import '../scss/index.scss'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -13,9 +15,12 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'InTune is the simplest method for finding six-string guitar tunings ranging from standard to drop-c' },
         { name: 'keywords', content: 'guitar, guitar tuning, tuning, standard tuning, drop-d tuning, drop-c tuning, drop tuning' },
       ]}
+      link={[
+        { rel: 'icon', href: `${Favicon}` }
+      ]}
     />
       {children()}
-    < Footer / >
+    < Footer />
   </div>
 )
 

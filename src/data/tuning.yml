@@ -1,7 +1,0 @@
-- tuning:
-  - name: 'standard'
-    tune: [e,a,d,g,b,e]
-  - name: 'drop d'
-    tune: [d,a,d,g,b,e]
-  - name: 'drop c'
-    tune: [c,g,c,f,a,d]
