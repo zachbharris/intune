@@ -1,7 +1,0 @@
-{
-  "tuning": [
-    { "name": "standard", "tunes": ["e","a","d","g","b","e"] },
-    { "name": "drop d", "tunes": ["d", "a", "d", "g", "b", "e"] },
-    { "name": "drop c", "tunes": ["c", "g", "c", "f", "a", "d"] }
-  ]
-}
