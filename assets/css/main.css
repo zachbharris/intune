@@ -84,6 +84,7 @@ section[name="intune"] {
   display: block;
   background-color: white;
   width: 100%;
+  border-radius: 5px 0 0 5px;
 }
 
 .tuning .string::after {
@@ -92,6 +93,7 @@ section[name="intune"] {
   display: block;
   background-color: white;
   width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
 .tuning #sixth:before,
