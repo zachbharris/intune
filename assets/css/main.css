@@ -71,6 +71,7 @@ section[name="intune"] {
   align-items: center;
   text-align: center;
   margin-bottom: 8px;
+  font-size: 1.25rem;
 }
 
 .tuning .string:last-child {
