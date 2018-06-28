@@ -1,0 +1,40 @@
+:root {
+  --black: #1b1b1b;
+}
+
+html, body {
+  font-family: 'Asap', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  background-color: var(--black);
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "title dropdown"
+    "tuning tuning";
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+
+  /* debug */
+  border: 1px solid red;
+}
+
+.container h1 {
+  grid-area: title;
+}
+
+.container selector {
+  grid-area: dropdown;
+}
+
+.tuning {
+  grid-area: tuning;
+}
