@@ -18,20 +18,20 @@ const intune = () => {
   const second = document.getElementById('second');
   const first = document.getElementById('first');
 
-  sixth.innerHTML = '';
-  fifth.innerHTML = '';
-  fourth.innerHTML = '';
-  third.innerHTML = '';
-  second.innerHTML = '';
-  first.innerHTML = '';
+  sixth.innerText = '';
+  fifth.innerText = '';
+  fourth.innerText = '';
+  third.innerText = '';
+  second.innerText = '';
+  first.innerText = '';
 
   if (selector.value == 'standard') {
-    sixth.innerHTML = standard[0];
-    fifth.innerHTML = standard[1];
-    fourth.innerHTML = standard[2];
-    third.innerHTML = standard[3];
-    second.innerHTML = standard[4];
-    first.innerHTML = standard[5];
+    sixth.innerText = standard[0];
+    fifth.innerText = standard[1];
+    fourth.innerText = standard[2];
+    third.innerText = standard[3];
+    second.innerText = standard[4];
+    first.innerText = standard[5];
   } else if (selector.value == 'dropD') {
     sixth.innerHTML = dropD[0];
     fifth.innerHTML = dropD[1];
