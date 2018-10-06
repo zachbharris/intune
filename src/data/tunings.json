@@ -1,0 +1,16 @@
+[
+  {
+    "standard": [
+      {
+        "name": "e standard",
+        "tuning": ["e", "a", "d", "g", "b", "e"]
+      }
+    ],
+    "dropped": [
+      {
+        "name": "drop d",
+        "tuning": ["d", "a", "d", "g", "b", "e"]
+      }
+    ]
+  }
+]
