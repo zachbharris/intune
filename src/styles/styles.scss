@@ -1,0 +1,8 @@
+@import './globals/colors';
+
+html, body {
+  background: $black;
+  color: $white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}

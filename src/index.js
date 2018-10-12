@@ -5,7 +5,7 @@ import 'tachyons/css/tachyons.min.css';
 import './styles/styles.scss';
 
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './utils/serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
