@@ -1,0 +1,20 @@
+@import './globals/colors';
+
+html, body {
+  background: $black;
+  color: $white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+// globals
+@import './globals/app';
+@import './globals/navbar';
+@import './globals/footer';
+// partials
+@import './partials/transitions';
+// pages
+@import './pages/home';
+@import './pages/type';
+@import './pages/tuning';
+@import './pages/notfound';

@@ -1,0 +1,97 @@
+.home {
+  display: grid;
+  grid-gap: 2rem 0;
+  h2 { margin: 1rem 0; }
+  .popular {
+    .items {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(12, 1fr);
+
+      a {
+        background: lighten($black, 5);
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        min-height: 120px;
+        transition: transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:hover {
+          transform: scale(1.03);
+        }
+
+        &:nth-child(1) { grid-column: span 8; }
+        &:nth-child(2) {
+          grid-column: span 4;
+          grid-row: span 2; }
+        &:nth-child(3) { grid-column: span 4; }
+        &:nth-child(4) { grid-column: span 4; }
+        &:nth-child(5) { grid-column: span 6; }
+        &:nth-child(6) { grid-column: span 6; }
+
+        @media screen and (max-width: 768px) {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            grid-column: span 6;
+          }
+          &:nth-child(2) { grid-row: auto; }
+        }
+
+        @media screen and (max-width: 480px) {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            grid-column: span 12;
+          }
+        }
+      }
+    }
+  }
+
+  .available {
+    margin-bottom: 1rem;
+    // .items is a class on the <ul>
+    .items {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      a {
+        background: lighten($black, 5);
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        min-height: 120px;
+        transition: transform 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+
+      @media screen and (max-width: 768px) { grid-template-columns: repeat(2, 1fr); }
+      @media screen and (max-width: 480px) { grid-template-columns: repeat(1, 1fr); }
+    }
+  }
+}

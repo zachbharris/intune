@@ -1,0 +1,12 @@
+.navbar {
+  padding: 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+
+  .brand {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

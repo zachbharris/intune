@@ -1,24 +1,30 @@
 {
   "name": "intune",
-  "version": "1.0.0",
-  "description": "guitar tuning resource",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-transition-group": "^2.5.0",
+    "tachyons": "^4.11.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zachbharris/intune.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Zach B. Harris",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zachbharris/intune/issues"
-  },
-  "homepage": "https://github.com/zachbharris/intune#readme",
-  "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
