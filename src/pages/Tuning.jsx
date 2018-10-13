@@ -16,6 +16,7 @@ class TuningPage extends Component {
       stringFive: '',
       stringSix: '',
       tuningName: '',
+      tuningDescription: '',
     };
   }
 
@@ -45,6 +46,7 @@ class TuningPage extends Component {
         stringFour: tuning.tune[3],
         stringFive: tuning.tune[4],
         stringSix: tuning.tune[5],
+        tuningDescription: tuning.description
       });
     } else {
       this.setState({ redirect: true });
@@ -60,7 +62,8 @@ class TuningPage extends Component {
       stringFour,
       stringFive,
       stringSix,
-      tuningName
+      tuningName,
+      tuningDescription,
     } = this.state;
 
     if (redirect) {
@@ -73,6 +76,12 @@ class TuningPage extends Component {
           <title>{tuningName} | InTune</title>
         </Helmet>
         <h1>{tuningName} Tuning</h1>
+
+        {
+          tuningDescription !== ''
+          ? <p>{tuningDescription}</p>
+          : null
+        }
 
         <ul className="tuning-visual">
           <li>{stringOne}</li>
