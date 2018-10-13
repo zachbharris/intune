@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 import tunings from '../data/tunings.json';
 
@@ -7,18 +8,29 @@ class TuningPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      redirect: false,
       stringOne: '',
       stringTwo: '',
       stringThree: '',
       stringFour: '',
       stringFive: '',
       stringSix: '',
-      redirect: false,
+      tuningName: '',
     };
   }
 
   componentDidMount() {
+    const { match } = this.props;
     this.handleTuning();
+
+    const name = (
+      match.params.tuning
+        .replace(/-/g, ' ')
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ')
+      );
+    this.setState({ tuningName: name });
   }
 
   handleTuning = () => {
@@ -40,15 +52,15 @@ class TuningPage extends Component {
   }
 
   render() {
-    const { match } = this.props;
     const {
+      redirect,
       stringOne,
       stringTwo,
       stringThree,
       stringFour,
       stringFive,
       stringSix,
-      redirect
+      tuningName
     } = this.state;
 
     if (redirect) {
@@ -56,10 +68,13 @@ class TuningPage extends Component {
     }
 
     return (
-      <div>
-        <h1>tunings page</h1>
-        <p>{match.params.tuning}</p>
-        <ul>
+      <div className="tuning">
+        <Helmet>
+          <title>{tuningName} | InTune</title>
+        </Helmet>
+        <h1>{tuningName} Tuning</h1>
+
+        <ul className="tuning-visual">
           <li>{stringOne}</li>
           <li>{stringTwo}</li>
           <li>{stringThree}</li>

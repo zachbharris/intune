@@ -16,6 +16,6 @@
   { "name": "open-c", "tune": ["c", "g", "c", "g", "c", "e"] },
   { "name": "open-a", "tune": ["e", "a", "e", "a", "c#", "e"] },
   { "name": "dadgad", "tune": ["d", "a", "d", "g", "a", "d"] },
-  { "name": "c-sharp", "tune": ["C#", "f#", "b", "e", "g#", "c#"] },
-  { "name": "c", "tune": ["C", "f", "a#", "d#", "h", "c"] }
+  { "name": "c-standard-sharp", "tune": ["C#", "f#", "b", "e", "g#", "c#"] },
+  { "name": "c-standard", "tune": ["C", "f", "a#", "d#", "h", "c"] }
 ]

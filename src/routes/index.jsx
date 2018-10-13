@@ -12,7 +12,7 @@ const Routes = () => (
       <TransitionGroup className="app">
         <CSSTransition
           key={location.key}
-          timeout={30000}
+          timeout={300}
           classNames="fade"
         >
           <Switch location={location}>
