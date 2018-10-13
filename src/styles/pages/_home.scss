@@ -1,6 +1,7 @@
 .home {
   display: grid;
   grid-gap: 2rem 0;
+  h2 { margin: 1rem 0; }
   .popular {
     .items {
       display: grid;
@@ -60,6 +61,7 @@
   }
 
   .available {
+    margin-bottom: 1rem;
     // .items is a class on the <ul>
     .items {
       display: grid;

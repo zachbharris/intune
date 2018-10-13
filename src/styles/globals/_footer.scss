@@ -1,0 +1,15 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 100%;
+  max-width: 768px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
