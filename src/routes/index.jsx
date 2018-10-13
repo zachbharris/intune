@@ -1,22 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import HomePage from '../pages/Home';
 import TuningPage from '../pages/Tuning';
 import NotFoundPage from '../pages/NotFound';
 
-class Routes extends Component {
-
-  render() {
-
-    return (
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/:type/:tuning" component={TuningPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-    );
-  }
-}
+const Routes = () => (
+  <div className="app">
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/:tuning" component={TuningPage} />
+      <Route component={NotFoundPage} />
+    </Switch>
+  </div>
+);
 
 export default withRouter(Routes);

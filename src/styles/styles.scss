@@ -6,3 +6,13 @@ html, body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
 }
+
+// globals
+@import './globals/app';
+@import './globals/navbar';
+// partials
+// pages
+@import './pages/home';
+@import './pages/type';
+@import './pages/tuning';
+@import './pages/notfound';

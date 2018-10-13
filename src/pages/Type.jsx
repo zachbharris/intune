@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-class TuningPage extends Component {
+class TypePage extends Component {
 
   render() {
     const { match } = this.props;
     return (
       <div>
-        <h1>tunings page</h1>
-        <p>{match.params.tuning}</p>
+        <h1>Types page</h1>
+        <p>{match.params.type}</p>
       </div>
     );
   }
 }
 
-export default TuningPage;
+export default TypePage;

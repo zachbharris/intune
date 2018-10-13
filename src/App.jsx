@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Tunings from './data/tunings';
-
+// importing routes
 import Routes from './routes';
 
-class App extends Component {
-  render() {
-    console.log(Tunings);
-    return (
-      <Router>
-        <Routes />
-      </Router>
-    );
-  }
-}
+import Navbar from './components/Navbar';
+
+const App = () => (
+  <Router>
+    <React.Fragment>
+      <Navbar />
+      <Routes />
+    </React.Fragment>
+  </Router>
+);
 
 export default App;
