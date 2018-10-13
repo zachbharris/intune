@@ -1,1 +1,21 @@
-{}
+[
+  { "name": "standard", "tune": ["e", "a", "d", "g", "b", "e"] },
+  { "name": "b-standard", "tune": ["b", "e", "a", "d", "f#", "b"] },
+  { "name": "a-standard", "tune": ["a", "d", "g", "c", "e", "a"] },
+  { "name": "g-standard", "tune": ["g", "c", "f", "a#", "d", "g"] },
+  { "name": "f-standard", "tune": ["f", "a#", "d#", "g#", "c", "f"] },
+  { "name": "drop-d", "tune": ["d", "a", "d", "g", "b", "e"] },
+  { "name": "drop-c-sharp", "tune": ["c#", "g#", "c#", "f#", "a#", "d#"] },
+  { "name": "drop-c", "tune": ["c", "g", "c", "f", "a", "d"] },
+  { "name": "drop-b", "tune": ["b", "f#", "b", "e", "g#", "c#"] },
+  { "name": "drop-b-flat", "tune": ["bb", "f", "bb", "eb", "g", "c"] },
+  { "name": "drop-a", "tune": ["a", "e", "a", "d", "f#", "b"] },
+  { "name": "open-g", "tune": ["d", "g", "d", "g", "b", "d"] },
+  { "name": "open-e", "tune": ["e", "b", "e", "g#", "b", "e"] },
+  { "name": "open-d", "tune": ["d", "a", "d", "f#", "a", "d"] },
+  { "name": "open-c", "tune": ["c", "g", "c", "g", "c", "e"] },
+  { "name": "open-a", "tune": ["e", "a", "e", "a", "c#", "e"] },
+  { "name": "dadgad", "tune": ["d", "a", "d", "g", "a", "d"] },
+  { "name": "c-sharp", "tune": ["C#", "f#", "b", "e", "g#", "c#"] },
+  { "name": "c", "tune": ["C", "f", "a#", "d#", "h", "c"] }
+]
